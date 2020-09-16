@@ -1,4 +1,4 @@
-package com.project.tan.entity;
+package com.project.tan.common.util;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,6 +7,11 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
+/**
+ * 通用响应结果体
+ *
+ * @param <T>
+ */
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter

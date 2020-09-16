@@ -1,6 +1,7 @@
 package com.project.tan.service;
 
 import com.project.tan.entity.model.User;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -16,7 +17,8 @@ public interface UserService2 {
      * @param name
      * @param age
      */
-    int create(String name, Integer age);
+    @Transactional(rollbackFor = Exception.class)
+    int create(String name, Integer age, String email);
 
     /**
      * 根据name查询用户
@@ -31,6 +33,7 @@ public interface UserService2 {
      *
      * @param name
      */
+    @Transactional
     int deleteByName(String name);
 
     /**

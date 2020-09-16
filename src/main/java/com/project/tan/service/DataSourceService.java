@@ -2,11 +2,9 @@ package com.project.tan.service;
 
 import com.project.tan.entity.dto.ColumnDTO;
 import com.project.tan.entity.dto.DataSourceDTO;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 public interface DataSourceService {
 
     /**
@@ -15,5 +13,5 @@ public interface DataSourceService {
      * @param datasourceDTO
      * @return
      */
-    List<ColumnDTO> getColumns(DataSourceDTO datasourceDTO);
+    List<ColumnDTO> getColumns(DataSourceDTO datasourceDTO, String tableName);
 }

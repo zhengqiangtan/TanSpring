@@ -1,6 +1,8 @@
 package com.project.tan.controller;
 
-import com.project.tan.entity.Result;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.project.tan.common.util.Result;
+import com.project.tan.entity.dto.BaseDTO;
 import com.project.tan.entity.dto.UserDTO;
 import com.project.tan.entity.model.User;
 import com.project.tan.service.UserService;
@@ -50,12 +52,40 @@ public class UserController {
 
 
     @GetMapping("/count")
-    @ApiOperation("测试userService2")
+    @ApiOperation("测试userService2--获取总数")
     public Result<Integer> getAllUsersCount() {
         int allUsersCnt = userService2.getAllUsers();
         return Result.successData(allUsersCnt);
     }
 
+    @PostMapping("/create")
+    @ApiOperation("测试userService2--更新用户信息接口")
+    public Result<String> updateUserById2(@RequestBody UserDTO userDTO) {
+        try {
+            userService2.create(userDTO.getName(),userDTO.getAge(),userDTO.getEmail());
+        } catch (Exception e) {
+            return Result.errorMessage("测试userService2--创建用户信息接口");
+        }
+        return Result.successMessage("创建成功！");
+    }
+
+
+
+    @PostMapping("/all")
+    @ApiOperation("测试userService--分页")
+    public Result<IPage<User>> getAllUser(@RequestBody BaseDTO baseDTO) {
+        try {
+
+            IPage<User> all = userService.getAll(baseDTO);
+            // 改变输出值 age 大小
+            all.getRecords().forEach(sd -> sd.setAge(28));
+            return Result.successData(all);
+
+        } catch (Exception e) {
+            return Result.errorMessage(e.getMessage());
+        }
+
+    }
 
 
 }

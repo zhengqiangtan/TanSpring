@@ -1,6 +1,6 @@
 //package com.project.tan.controller;
 //
-//import com.project.tan.entity.Result;
+//import com.project.tan.common.util.Result;
 //import com.project.tan.entity.dto.ColumnDTO;
 //import com.project.tan.entity.dto.DataSourceDTO;
 //import com.project.tan.service.DataSourceService;

@@ -24,6 +24,7 @@ public class UserServiceTest {
     @Autowired
     private UserService2 userService;
 
+
     @Before
     public void setUp() {
         // 准备，清空user表
@@ -34,11 +35,11 @@ public class UserServiceTest {
     @Test
     public void test() throws Exception {
         // 插入5个用户
-        userService.create("Tom", 10);
-        userService.create("Mike", 11);
-        userService.create("Didispace", 30);
-        userService.create("Oscar", 21);
-        userService.create("Linda", 17);
+        userService.create("Tom", 10, null);
+        userService.create("Mike", 11, null);
+        userService.create("Didispace", 30, null);
+        userService.create("Oscar", 21, null);
+        userService.create("Linda", 17, null);
 
         // 查询名为Oscar的用户，判断年龄是否匹配
         List<User> userList = userService.getByName("Oscar");
@@ -53,6 +54,14 @@ public class UserServiceTest {
 
         // 查数据库，应该有5个用户
         Assert.assertEquals(3, userService.getAllUsers());
+
+    }
+
+
+    @Test
+    public void test2() {
+        List<User> list = userService.getByName("aaa");
+        list.stream().forEach(l -> System.out.println(l.toString()));
 
     }
 

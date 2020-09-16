@@ -3,8 +3,6 @@ package com.project.tan.service.impl;
 import com.project.tan.entity.model.User;
 import com.project.tan.service.UserService2;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
@@ -24,14 +22,13 @@ public class UserServiceImpl2 implements UserService2 {
 //    单数据源配置
 //    private JdbcTemplate jdbcTemplate;
 
-
     @Autowired
     private JdbcTemplate primaryJdbcTemplate;
 
 
     @Override
-    public int create(String name, Integer age) {
-        return primaryJdbcTemplate.update("insert into USER(NAME, AGE) values(?, ?)", name, age);
+    public int create(String name, Integer age, String email) {
+        return primaryJdbcTemplate.update("insert into USER(NAME, AGE, EMAIL) values(?, ?,?)", name, age, email);
     }
 
     @Override

@@ -18,6 +18,19 @@ public class DataSourceDTO {
     @ApiModelProperty("数据源ID")
     private Long id;
 
-    @ApiModelProperty("表名")
-    private String tableName;
+    @ApiModelProperty("库名")
+    private String dbType;
+
+    @ApiModelProperty("库名")
+    private String dbName;
+
+    @ApiModelProperty("jdbcUrl")
+    private String jdbcUrl;
+
+    @ApiModelProperty("username")
+    private String userName;
+
+    @ApiModelProperty("password")
+    private String password;
+
 }

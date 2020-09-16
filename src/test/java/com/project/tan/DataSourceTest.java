@@ -36,8 +36,15 @@ public class DataSourceTest {
 
     @Before
     public void setUp() {
-        primaryJdbcTemplate.update("DELETE  FROM  USER ");
-        secondaryJdbcTemplate.update("DELETE  FROM  USER ");
+//        primaryJdbcTemplate.update("DELETE  FROM  USER ");
+//        secondaryJdbcTemplate.update("DELETE  FROM  USER ");
+    }
+
+    @Test
+    public void initTest1User() throws Exception {
+        for (int i = 0; i < 100; i++) {
+            primaryJdbcTemplate.update("insert into user(name,age,email) values(?, ?,?)", "Tan-" + i, 18,"1008612@22.com");
+        }
     }
 
 

@@ -1,9 +1,10 @@
 package com.project.tan;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.project.tan.controller.UserController;
-import com.project.tan.entity.Result;
+import com.project.tan.common.util.Result;
+import com.project.tan.entity.dto.BaseDTO;
 import com.project.tan.entity.model.User;
-import com.project.tan.service.UserService2;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,8 +12,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.List;
 
 /**
  * UserControllerTest
@@ -37,6 +36,19 @@ public class UserControllerTest {
         Result<Integer> allUsersCount = userController.getAllUsersCount();
         // 查数据库，应该有2个用户
         Assert.assertEquals(2, allUsersCount.getData().intValue());
+
+    }
+
+
+    @Test
+    public void test2() throws Exception {
+        BaseDTO baseDTO = new BaseDTO();
+        baseDTO.setPageNo(1);
+        baseDTO.setPageSize(5);
+        baseDTO.setKeyword("Tan");
+        Result<IPage<User>> allUser = userController.getAllUser(baseDTO);
+
+        allUser.getData().getRecords().stream().forEach(l -> System.out.println(l.toString()));
 
     }
 }
