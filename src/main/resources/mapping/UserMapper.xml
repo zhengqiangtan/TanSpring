@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.project.tan.entity.dao.UserMapper">
+
+    <resultMap id="UserMap" type="com.project.tan.entity.model.User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="email" property="email"/>
+    </resultMap>
+
+    <select id="findByName2" resultType="com.project.tan.entity.model.User">
+        SELECT * FROM USER WHERE NAME = #{name}
+    </select>
+
+    <insert id="insert">
+        INSERT INTO USER(NAME, AGE) VALUES(#{name}, #{age})
+    </insert>
+
+</mapper>
