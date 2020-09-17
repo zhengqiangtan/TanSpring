@@ -10,11 +10,14 @@
 - 分页的使用
 - 代码生成器 TODO
 - 多数据源配置实践
-- 事务管理实践
+- 集成事务管理
 - 缓存的使用与Cache注解 (spring-boot-starter-cache)
-- 单元测试技术
+- Spring单元测试
 - 日志管理log4j
 - 自定义定义切面拦截请求以及统计接口耗时（可指定切面顺序）
+- SpringBeanUtil工具的使用 TODO
+- 集成外部调用Feign TODO
+- 集成配置中心 TODO
 
 
 
