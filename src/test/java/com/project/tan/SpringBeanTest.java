@@ -4,6 +4,8 @@ import com.project.tan.common.util.SpringBeanUtil;
 import com.project.tan.entity.dao.UserMapper;
 import com.project.tan.entity.model.User;
 import com.project.tan.service.BaseService;
+import com.project.tan.service.impl.MyService1;
+import com.project.tan.service.impl.MyService2;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,7 +29,10 @@ public class SpringBeanTest {
     public void test() {
         BaseService baseService = (BaseService) SpringBeanUtil.getBean("MyService1");
         baseService.sayHi();
+
+        BaseService baseService2 = (BaseService) SpringBeanUtil.getBean(MyService2.class);
+        baseService2.sayHi();
+
     }
 }
 
-//2020-09-17 19:15:34.422  INFO 14664 --- [           main] com.project.tan.service.impl.MyService1  : This is MyService1 say Hi !

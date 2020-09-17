@@ -1,7 +1,7 @@
-### TanSpring SpringBoot 综合
+### TanSpring SpringBoot 综合学习
 
 
-##### 1. 相关技术
+##### 1. 此项目涉及到的相关技术
  
 - SpringBoot 2.3.0
 - 使用Swagger2构建强大的API文档
@@ -15,7 +15,9 @@
 - Spring单元测试
 - 日志管理log4j
 - 自定义定义切面拦截请求以及统计接口耗时（可指定切面顺序）
-- SpringBeanUtil工具的使用 TODO
+- SpringBeanUtil工具的使用 
+- 配置异步任务线程池
+- 集成定时任务设置
 - 集成外部调用Feign TODO
 - 集成配置中心 TODO
 
