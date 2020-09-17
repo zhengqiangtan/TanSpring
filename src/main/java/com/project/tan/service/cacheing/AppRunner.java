@@ -20,10 +20,9 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-@Order(value = 1)
+@Order(value = 2)
 public class AppRunner implements CommandLineRunner {
     private final BookRepository bookRepository;
-
     public AppRunner(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
@@ -37,6 +36,7 @@ public class AppRunner implements CommandLineRunner {
      */
     @Override
     public void run(String... args) throws Exception {
+
         new Thread() {
             public void run() {
                 log.info(".... Fetching books");
