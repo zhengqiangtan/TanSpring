@@ -7,14 +7,15 @@
 - 使用Swagger2构建强大的API文档
 - JdbcTemplate的使用
 - mybatis-plus (xml & SQL两种方式的使用)
-- 分页
+- 分页的使用
 - 代码生成器 TODO
-- 多数据源配置
-- 事务管理
-- 缓存的使用与Cache注解
+- 多数据源配置实践
+- 事务管理实践
+- 缓存的使用与Cache注解 (spring-boot-starter-cache)
 - 单元测试技术
 - 日志管理log4j
-- Hutool 工具
+- 自定义定义切面拦截请求以及统计接口耗时（可指定切面顺序）
+
 
 
 

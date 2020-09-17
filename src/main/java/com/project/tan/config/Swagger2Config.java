@@ -25,7 +25,7 @@ public class Swagger2Config {
                 .paths(PathSelectors.any())
                 .build().apiInfo(new ApiInfoBuilder()
                         .title("SpringBoot综合练习")
-                        .description("zhengqiang.tan testing ....")
+                        .description("zhengqiang.tan SpringBoot Learning")
                         .version("1.0.0")
                         .license("License")
                         .licenseUrl("http://www.baidu.com")
