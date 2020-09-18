@@ -11,7 +11,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * 主启动类
  */
 @EnableScheduling
-@EnableAsync
 @EnableCaching
 @SpringBootApplication(scanBasePackages = "com.project.tan")
 public class TanSpringApplication {
