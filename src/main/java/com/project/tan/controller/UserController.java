@@ -24,6 +24,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    // Template风格
     @Autowired
     UserService2 userService2;
 
@@ -32,7 +33,6 @@ public class UserController {
     @ApiOperation("根据id查询用户的接口-restful风格")
     @ApiImplicitParam(name = "id", value = "用户id", defaultValue = "1", required = true)
     public Result<UserDTO> getUserById(@PathVariable Long id) {
-        System.out.println("有没有收到变量？id=" + id);
         return Result.successData(userService.getUserById(id));
     }
 
@@ -49,6 +49,17 @@ public class UserController {
         return Result.successMessage("更新成功！");
     }
 
+    @DeleteMapping("/delete/{id}")
+    @ApiOperation("删除用户信息接口")
+    public Result<String> deleteUserById(@PathVariable("id") Long id) {
+        try {
+            userService.deleteById(id);
+        } catch (Exception e) {
+            log.error("删除接口报错:{}", e.getMessage());
+            return Result.errorMessage("删除用户发生错误！");
+        }
+        return Result.successMessage("删除成功！");
+    }
 
 
     @GetMapping("/count")
@@ -62,13 +73,12 @@ public class UserController {
     @ApiOperation("测试userService2--更新用户信息接口")
     public Result<String> updateUserById2(@RequestBody UserDTO userDTO) {
         try {
-            userService2.create(userDTO.getName(),userDTO.getAge(),userDTO.getEmail());
+            userService2.create(userDTO.getName(), userDTO.getAge(), userDTO.getEmail());
         } catch (Exception e) {
             return Result.errorMessage("测试userService2--创建用户信息接口");
         }
         return Result.successMessage("创建成功！");
     }
-
 
 
     @PostMapping("/all")

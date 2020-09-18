@@ -4,9 +4,6 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.project.tan.entity.dto.BaseDTO;
 import com.project.tan.entity.dto.UserDTO;
 import com.project.tan.entity.model.User;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 public interface UserService {
 
@@ -23,8 +20,14 @@ public interface UserService {
      *
      * @param userDTO
      */
-    @Transactional(rollbackFor = Exception.class, isolation = Isolation.DEFAULT, propagation = Propagation.REQUIRED)
     void saveOrUpdate(UserDTO userDTO);
+
+    /**
+     * 删除用户
+     *
+     * @param id
+     */
+    void deleteById(Long id);
 
 
     /**

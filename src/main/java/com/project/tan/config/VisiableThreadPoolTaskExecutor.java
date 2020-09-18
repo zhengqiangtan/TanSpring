@@ -25,7 +25,7 @@ public class VisiableThreadPoolTaskExecutor extends ThreadPoolTaskExecutor {
             return;
         }
 
-        log.info("{}, {},taskCount [{}], completedTaskCount [{}], activeCount [{}], queueSize [{}]",
+        log.info("ThreadPool State : {}, {},taskCount [{}], completedTaskCount [{}], activeCount [{}], queueSize [{}]",
                 this.getThreadNamePrefix(),
                 prefix,
                 threadPoolExecutor.getTaskCount(),
@@ -35,39 +35,8 @@ public class VisiableThreadPoolTaskExecutor extends ThreadPoolTaskExecutor {
     }
 
     @Override
-    public void execute(Runnable task) {
-        showThreadPoolInfo("1. do execute");
-        super.execute(task);
-    }
-
-    @Override
-    public void execute(Runnable task, long startTimeout) {
-        showThreadPoolInfo("2. do execute");
-        super.execute(task, startTimeout);
-    }
-
-    @Override
-    public Future<?> submit(Runnable task) {
-        showThreadPoolInfo("1. do submit");
-        return super.submit(task);
-    }
-
-    @Override
     public <T> Future<T> submit(Callable<T> task) {
-        showThreadPoolInfo("2. do submit");
+        showThreadPoolInfo("submit task ...");
         return super.submit(task);
-    }
-
-    @Override
-    public ListenableFuture<?> submitListenable(Runnable task) {
-        showThreadPoolInfo("1. do submitListenable");
-
-        return super.submitListenable(task);
-    }
-
-    @Override
-    public <T> ListenableFuture<T> submitListenable(Callable<T> task) {
-        showThreadPoolInfo("2. do submitListenable");
-        return super.submitListenable(task);
     }
 }

@@ -25,7 +25,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @Author zhengqiang.tan
  * @Date 2020/9/17 7:37 PM
  * @Version 1.0
- * @REF https://www.jianshu.com/p/9987905648d0
+ * @REF https://www.jianshu.com/p/9987905648d0,https://www.cnblogs.com/gaoyawei/p/7777254.html
  */
 @Configuration
 @EnableAsync
