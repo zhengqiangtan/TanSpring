@@ -3,7 +3,6 @@ package com.project.tan.config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.util.concurrent.Executor;
@@ -28,7 +27,6 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @REF https://www.jianshu.com/p/9987905648d0,https://www.cnblogs.com/gaoyawei/p/7777254.html
  */
 @Configuration
-@EnableAsync
 public class ThreadPoolConfig {
 
     // 使用配置中的参数取值
