@@ -2,6 +2,7 @@ package com.project.tan.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -17,6 +18,8 @@ import redis.clients.jedis.JedisPoolConfig;
  * @Date 2020/9/18 2:58 PM
  * @Version 1.0
  */
+// 启用条件：当配置文件中myconfig.redis=redis才会生效，否则不启用
+@ConditionalOnProperty(name = "myconfig.redis", havingValue = "redis",matchIfMissing = true)
 @Configuration
 @Slf4j
 public class RedisConfig {

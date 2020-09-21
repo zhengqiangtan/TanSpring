@@ -2,6 +2,8 @@ package com.project.tan;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
+import org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableAsync;
 
@@ -16,7 +18,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
 //@EnableScheduling 定时任务开关
 @EnableAsync
 @EnableCaching
-@SpringBootApplication(scanBasePackages = "com.project.tan")
+// 排除redis自动配置类（配合ConditionalOnProperty）
+@SpringBootApplication(scanBasePackages = "com.project.tan", exclude = {RedisAutoConfiguration.class, RedisRepositoriesAutoConfiguration.class})
 public class TanSpringApplication {
     public static void main(String[] args) {
         SpringApplication.run(TanSpringApplication.class, args);
