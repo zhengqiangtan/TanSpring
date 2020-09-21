@@ -33,18 +33,23 @@
 - 设置开机启动程序
 - 集成外部调用Feign TODO
 - 集成配置中心 TODO
-- 集成外部数据源redis （）
+- 集成外部数据源redis
+- 自定义拦截器、监听器、过滤器
+
 
 ---
 - 项目配置打印具体SQL信息
+- 项目启动排除Redis配置类信息
 
 
 
 ##### 2、SpringBoot 的相关疑问和解答
 - [有关SpringBoot的100问](https://zhengqiang.blog.csdn.net/article/details/108652960)
+
 - 集成Redis注意：redis 服务需先启动并带有密码认证
 
-
+- Spring Boot 如何使用拦截器、过滤器、监听器？
+参考：[https://mp.weixin.qq.com/s/k16AOko-EMcrASFLAHkc5Q](https://mp.weixin.qq.com/s/k16AOko-EMcrASFLAHkc5Q)
 
 
 ##### 3、SpringBoot 学习资源
@@ -55,5 +60,5 @@
 
 
 ##### 4、SpringBoot 问题解决
-1. Redis引入包冲突的问题
-2. 其他
+1. Redis引入包冲突的问题 
+2. java.lang.IllegalStateException: Cannot create a session after the response has been committed
