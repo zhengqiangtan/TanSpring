@@ -57,9 +57,19 @@
  参考：[https://zhengqiang.blog.csdn.net/article/details/108715170](https://zhengqiang.blog.csdn.net/article/details/108715170)
  
  
- - 
+ - Springboot设置跨域三种方式
  参考文章：[https://mp.weixin.qq.com/s/s9pUpQtHgL3WK6sjKC0b0w](https://mp.weixin.qq.com/s/s9pUpQtHgL3WK6sjKC0b0w)
  
+ - SpringAop日志收集与处理工具包
+ 参考文章：[https://mp.weixin.qq.com/s/ENAK_yQoVvQz24aSNsVfiw](https://mp.weixin.qq.com/s/ENAK_yQoVvQz24aSNsVfiw)
+ ```xml
+        <!--SpringAop日志收集工具包-->
+        <dependency>
+            <groupId>com.github.ealenxie</groupId>
+            <artifactId>aop-log</artifactId>
+            <version>2.1</version>
+        </dependency>
+```
  
 
 ##### 3、SpringBoot 学习资源
