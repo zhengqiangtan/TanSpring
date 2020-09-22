@@ -31,11 +31,13 @@
 - 集成定时任务设置
 - 开发生产多环境配置
 - 设置开机启动程序
-- 集成外部调用Feign TODO
+- [集成外部调用Feign](https://blog.csdn.net/catoop/article/details/101011782)
 - 集成配置中心 TODO
 - 集成外部数据源redis
 - 自定义拦截器、监听器、过滤器
-- Springboot设置跨域
+- [Springboot设置跨域](https://mp.weixin.qq.com/s/s9pUpQtHgL3WK6sjKC0b0w)
+
+
 
 
 ---
