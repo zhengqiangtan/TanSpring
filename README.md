@@ -35,6 +35,7 @@
 - 集成配置中心 TODO
 - 集成外部数据源redis
 - 自定义拦截器、监听器、过滤器
+- Springboot设置跨域
 
 
 ---
@@ -54,6 +55,12 @@
 
 - 解决日志jar冲突的问题
  参考：[https://zhengqiang.blog.csdn.net/article/details/108715170](https://zhengqiang.blog.csdn.net/article/details/108715170)
+ 
+ 
+ - 
+ 参考文章：[https://mp.weixin.qq.com/s/s9pUpQtHgL3WK6sjKC0b0w](https://mp.weixin.qq.com/s/s9pUpQtHgL3WK6sjKC0b0w)
+ 
+ 
 
 ##### 3、SpringBoot 学习资源
 

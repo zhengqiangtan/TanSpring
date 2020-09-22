@@ -2,6 +2,7 @@ package com.project.tan.controller;
 
 import com.project.tan.filter.MyHttpSessionListener;
 import io.swagger.annotations.Api;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+/**
+ * TestController
+ */
+@CrossOrigin // 所有域名均可以访问该类下所有接口
+//@CrossOrigin("https://blog.csdn.net") // 指定域名才可以访问如下的接口
 @RestController
 @Api(tags = "测试功能接口")
 public class TestController {
