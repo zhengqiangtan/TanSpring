@@ -52,6 +52,9 @@
 参考：[https://mp.weixin.qq.com/s/k16AOko-EMcrASFLAHkc5Q](https://mp.weixin.qq.com/s/k16AOko-EMcrASFLAHkc5Q)
 
 
+- 解决日志jar冲突的问题
+ 参考：[https://zhengqiang.blog.csdn.net/article/details/108715170](https://zhengqiang.blog.csdn.net/article/details/108715170)
+
 ##### 3、SpringBoot 学习资源
 
  - [Spring Boot 2.x基础教程 （新手推荐](http://blog.didispace.com/spring-boot-learning-2x/)
