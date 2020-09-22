@@ -14,13 +14,15 @@ import java.util.Collection;
 import java.util.Map;
 
 /**
- * Fegin Config
- *
- * @Author zhengqiang.tan
- * @Date 2020/9/22 3:52 PM
- * @Version 1.0
- * 参考：https://www.cnblogs.com/taiyonghai/p/9306244.html
+ * 作用：微服务之前调用的时候请求不会传递参数，通过实现RequestInterceptor接口,完成对所有的Feign请求,传递请求头和请求参数。
+ * 常见的使用时传递token。
+ * apply方法往RequestTemplate添加自定义名称的header。
+ * <p>
+ * 参考：
+ * https://zhuanlan.zhihu.com/p/81349317
+ * https://blog.csdn.net/qq_35614141/article/details/88899805
  */
+
 @Component
 @Slf4j
 public class FeignCustomRequestInteceptor implements RequestInterceptor {
