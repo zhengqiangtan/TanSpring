@@ -82,3 +82,4 @@
 ##### 4、SpringBoot 问题解决
 1. Redis引入包冲突的问题 
 2. java.lang.IllegalStateException: Cannot create a session after the response has been committed
+3. SpringBoot内存泄露排查 [https://mp.weixin.qq.com/s/ZrtY5qiO7fdzCC12X0gQJg](https://mp.weixin.qq.com/s/ZrtY5qiO7fdzCC12X0gQJg)
