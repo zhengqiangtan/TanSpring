@@ -36,6 +36,7 @@
 - 集成外部数据源redis
 - 自定义拦截器、监听器、过滤器
 - [Springboot设置跨域](https://mp.weixin.qq.com/s/s9pUpQtHgL3WK6sjKC0b0w)
+- SpringBoot全局异常处理 ExceptionHandlerController
 
 
 
