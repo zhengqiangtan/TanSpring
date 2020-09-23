@@ -1,6 +1,6 @@
-### TanSpring SpringBoot 综合学习
+## TanSpring SpringBoot 综合学习项目
 
-##### 环境信息
+### 环境信息
 - SpringBoot 2.3.0.RELEASE
 - redis jedis : 3.3.0
 - mysql-connector : 8.0.2
@@ -11,7 +11,7 @@
 
 
 
-##### 1. 此项目涉及到的相关技术
+### 一. 此项目涉及到的相关技术
  
 - SpringBoot 2.3.0
 - 使用Swagger2构建强大的API文档
@@ -37,6 +37,7 @@
 - 自定义拦截器、监听器、过滤器
 - [Springboot设置跨域](https://mp.weixin.qq.com/s/s9pUpQtHgL3WK6sjKC0b0w)
 - SpringBoot全局异常处理 ExceptionHandlerController
+- 添加钉钉告警和邮件告警工具类（非Spring集成）
 
 
 
@@ -47,7 +48,7 @@
 
 
 
-##### 2、SpringBoot 的相关疑问和解答
+### 二、SpringBoot 的相关疑问和解答
 - [有关SpringBoot的100问](https://zhengqiang.blog.csdn.net/article/details/108652960)
 
 - 集成Redis注意：redis 服务需先启动并带有密码认证
@@ -75,14 +76,14 @@
 ```
  
 
-##### 3、SpringBoot 学习资源
+### 三、SpringBoot 学习资源
 
  - [Spring Boot 2.x基础教程 （新手推荐](http://blog.didispace.com/spring-boot-learning-2x/)
  - [](https://github.com/dyc87112/SpringBoot-Learning/tree/master/2.1.x)
 
 
 
-##### 4、SpringBoot 问题解决
+### 四、SpringBoot 问题解决
 1. Redis引入包冲突的问题 
 2. java.lang.IllegalStateException: Cannot create a session after the response has been committed
 3. SpringBoot内存泄露排查 [https://mp.weixin.qq.com/s/ZrtY5qiO7fdzCC12X0gQJg](https://mp.weixin.qq.com/s/ZrtY5qiO7fdzCC12X0gQJg)
