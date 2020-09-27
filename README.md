@@ -79,11 +79,26 @@
 ### 三、SpringBoot 学习资源
 
  - [Spring Boot 2.x基础教程 （新手推荐](http://blog.didispace.com/spring-boot-learning-2x/)
- - [](https://github.com/dyc87112/SpringBoot-Learning/tree/master/2.1.x)
-
+ - [SpringBoot-Learning](https://github.com/dyc87112/SpringBoot-Learning/tree/master/2.1.x)
+ ---
+ 
+ -[ ]  [Spring Boot 知识清单（一）SpringApplication](https://developer.aliyun.com/article/773194?utm_content=g_1000186051)
+ -[ ]  [SpringBoot统一参数校验](https://developer.aliyun.com/article/772482?spm=a2c6h.12873639.0.0.4ccf236696yB99)
+ -[ ]  [SpringBoot分组校验及自定义校验注解](https://developer.aliyun.com/article/773001?utm_content=g_1000186050)
+ -[ ]  [@Transaction哪里来这么多坑](https://mp.weixin.qq.com/s/NjYsZu8vRvajWNrPCtLeFg)
 
 
 ### 四、SpringBoot 问题解决
 1. Redis引入包冲突的问题 
 2. java.lang.IllegalStateException: Cannot create a session after the response has been committed
 3. SpringBoot内存泄露排查 [https://mp.weixin.qq.com/s/ZrtY5qiO7fdzCC12X0gQJg](https://mp.weixin.qq.com/s/ZrtY5qiO7fdzCC12X0gQJg)
+
+
+<br><br>
+
+|  学习清单   | 完成进度情况说明  |
+|  ----  | :----:  |
+| `单元格`  | 单元格 |
+| 单元格  | 单元格 |
+
+
