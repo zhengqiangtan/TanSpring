@@ -1,8 +1,9 @@
 package com.test.project.entity;
 
-import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
 
 /**
  * <p>
@@ -10,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author zhengqiang.tan
- * @since 2020-09-28
+ * @Date 2020-09-28
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

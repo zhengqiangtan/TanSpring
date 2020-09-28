@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author zhengqiang.tan
- * @since 2020-09-28
+ * @Date 2020-09-28
  */
 public interface OdsUserMapper extends BaseMapper<OdsUser> {
 

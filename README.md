@@ -40,11 +40,10 @@
 - 添加钉钉告警和邮件告警工具类（非Spring集成）
 
 
-
-
 ---
 - 项目配置打印具体SQL信息
 - 项目启动排除Redis配置类信息
+- MyBatis-plus @TableName @TableFiled等的使用，使用IService接口
 
 
 
@@ -81,11 +80,11 @@
  - [Spring Boot 2.x基础教程 （新手推荐](http://blog.didispace.com/spring-boot-learning-2x/)
  - [SpringBoot-Learning](https://github.com/dyc87112/SpringBoot-Learning/tree/master/2.1.x)
  ---
- 
- -[ ]  [Spring Boot 知识清单（一）SpringApplication](https://developer.aliyun.com/article/773194?utm_content=g_1000186051)
- -[ ]  [SpringBoot统一参数校验](https://developer.aliyun.com/article/772482?spm=a2c6h.12873639.0.0.4ccf236696yB99)
- -[ ]  [SpringBoot分组校验及自定义校验注解](https://developer.aliyun.com/article/773001?utm_content=g_1000186050)
- -[ ]  [@Transaction哪里来这么多坑](https://mp.weixin.qq.com/s/NjYsZu8vRvajWNrPCtLeFg)
+ `待处理`
+[Spring Boot 知识清单（一）SpringApplication](https://developer.aliyun.com/article/773194?utm_content=g_1000186051)
+[SpringBoot统一参数校验](https://developer.aliyun.com/article/772482?spm=a2c6h.12873639.0.0.4ccf236696yB99)
+[SpringBoot分组校验及自定义校验注解](https://developer.aliyun.com/article/773001?utm_content=g_1000186050)
+[@Transaction哪里来这么多坑](https://mp.weixin.qq.com/s/NjYsZu8vRvajWNrPCtLeFg)
 
 
 ### 四、SpringBoot 问题解决
