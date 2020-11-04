@@ -21,6 +21,10 @@ import java.util.concurrent.ThreadPoolExecutor;
  * ThreadPoolExecutor.DiscardOldestPolicy：丢弃队列最前面的任务，然后重新提交被拒绝的任务
  * ThreadPoolExecutor.CallerRunsPolicy：由调用线程（提交任务的线程）处理该任务
  *
+ *
+ * 补充：
+ * 默认情况下，Spring 将启动一个默认的线程池供异步任务使用。这个线程池也是无限大的，资源使用不可控，所以强烈建议你使用代码设置一个适合自己的。
+ *
  * @Author zhengqiang.tan
  * @Date 2020/9/17 7:37 PM
  * @Version 1.0

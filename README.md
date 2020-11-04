@@ -44,6 +44,8 @@
 - 项目配置打印具体SQL信息
 - 项目启动排除Redis配置类信息
 - MyBatis-plus @TableName @TableFiled等的使用，使用IService接口
+- [优雅关闭SpringBoot服务](https://mp.weixin.qq.com/s/f2ZvpglLwTrsRv8BZvns_A)（ 2.3 版本，内置此功能）：server.shutdown=graceful
+
 
 
 
@@ -80,11 +82,17 @@
  - [Spring Boot 2.x基础教程 （新手推荐](http://blog.didispace.com/spring-boot-learning-2x/)
  - [SpringBoot-Learning](https://github.com/dyc87112/SpringBoot-Learning/tree/master/2.1.x)
  ---
- `待处理`
-[Spring Boot 知识清单（一）SpringApplication](https://developer.aliyun.com/article/773194?utm_content=g_1000186051)
-[SpringBoot统一参数校验](https://developer.aliyun.com/article/772482?spm=a2c6h.12873639.0.0.4ccf236696yB99)
-[SpringBoot分组校验及自定义校验注解](https://developer.aliyun.com/article/773001?utm_content=g_1000186050)
-[@Transaction哪里来这么多坑](https://mp.weixin.qq.com/s/NjYsZu8vRvajWNrPCtLeFg)
+ `待处理`  
+[Spring Boot 知识清单（一）SpringApplication](https://developer.aliyun.com/article/773194?utm_content=g_1000186051)  
+[SpringBoot统一参数校验](https://developer.aliyun.com/article/772482?spm=a2c6h.12873639.0.0.4ccf236696yB99)  
+[SpringBoot分组校验及自定义校验注解](https://developer.aliyun.com/article/773001?utm_content=g_1000186050)   
+[@Transaction哪里来这么多坑](https://mp.weixin.qq.com/s/NjYsZu8vRvajWNrPCtLeFg)  
+[SpringBoot启动扩展点](https://mp.weixin.qq.com/s/w-oSnFbzjWbx6HJKaICsgg)  
+[Spring注解相关](https://mp.weixin.qq.com/s/u7a_GGVi6y4eyAEeeUaEtA)  
+[牛逼的日志切面，方便甩锅](https://mp.weixin.qq.com/s/VA07Lca9ldZj4pQxlN8TUQ)   
+
+
+[SpringBoot实现的接入钉钉机器人的一个消息通知中间件](https://github.com/AnswerAIL/dingtalk-spring-boot-starter/tree/master/src/main/java/com/jaemon/dingtalk)
 
 
 ### 四、SpringBoot 问题解决

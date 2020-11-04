@@ -1,5 +1,5 @@
 ### 核心注解
- 
+[参考文章1](https://mp.weixin.qq.com/s/u7a_GGVi6y4eyAEeeUaEtA) 
 @Required
  
 用于Bean的Setter方法上，以指示该Bean组装时必须要有该属性，否则抛出BeanInitializationException
