@@ -16,7 +16,7 @@ public class ThreadPoolExecutorUtils {
     }
     private static class CommonExecutor {
         private static ThreadPoolExecutor executor =
-                new ThreadPoolExecutor(0, 5, 30, TimeUnit.SECONDS,
+                new ThreadPoolExecutor(0, 10, 30, TimeUnit.SECONDS,
                         new LinkedBlockingQueue<>(100),
                         new ThreadPoolExecutor.AbortPolicy());
     }

@@ -17,12 +17,12 @@ import java.io.Serializable;
 @Setter
 @Getter
 public class Result<T> implements Serializable {
+    private static final long serialVersionUID = -3032015199552656978L;
 
     public static final int SUCCESS = 0;
     public static final int ERROR = 1;
     public static final int NOT_LOGIN = 999;
 
-    private static final long serialVersionUID = -3032015199552656978L;
     private int code;
     private String message = "";
     private T data;

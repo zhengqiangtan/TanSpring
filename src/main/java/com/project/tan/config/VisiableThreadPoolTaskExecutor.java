@@ -2,7 +2,6 @@ package com.project.tan.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
-import org.springframework.util.concurrent.ListenableFuture;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
@@ -18,6 +17,12 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 @Slf4j
 public class VisiableThreadPoolTaskExecutor extends ThreadPoolTaskExecutor {
+    @Override
+    public <T> Future<T> submit(Callable<T> task) {
+        showThreadPoolInfo("submit task ...");
+        return super.submit(task);
+    }
+
     private void showThreadPoolInfo(String prefix) {
         ThreadPoolExecutor threadPoolExecutor = getThreadPoolExecutor();
 
@@ -32,11 +37,5 @@ public class VisiableThreadPoolTaskExecutor extends ThreadPoolTaskExecutor {
                 threadPoolExecutor.getCompletedTaskCount(),
                 threadPoolExecutor.getActiveCount(),
                 threadPoolExecutor.getQueue().size());
-    }
-
-    @Override
-    public <T> Future<T> submit(Callable<T> task) {
-        showThreadPoolInfo("submit task ...");
-        return super.submit(task);
     }
 }

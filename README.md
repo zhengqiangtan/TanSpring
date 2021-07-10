@@ -99,13 +99,9 @@
 1. Redis引入包冲突的问题 
 2. java.lang.IllegalStateException: Cannot create a session after the response has been committed
 3. SpringBoot内存泄露排查 [https://mp.weixin.qq.com/s/ZrtY5qiO7fdzCC12X0gQJg](https://mp.weixin.qq.com/s/ZrtY5qiO7fdzCC12X0gQJg)
+4. Spring Fegin调用 [https://blog.csdn.net/qq_33371766/article/details/106911331](https://blog.csdn.net/qq_33371766/article/details/106911331)
+5. SpringBoot多模块开发[SpringBoot多模块开发与排坑指南](https://baijiahao.baidu.com/s?id=1661916478338899372&wfr=spider&for=pc)
 
-
-<br><br>
-
-|  学习清单   | 完成进度情况说明  |
-|  ----  | :----:  |
-| `单元格`  | 单元格 |
-| 单元格  | 单元格 |
+<br>
 
 
